@@ -1,14 +1,4 @@
-# minimal-co2-pcb
-
-> [!NOTE]
-> This board has been physically tested.
-
-## Todo
-
-- [ ] Correct SCD40 module footprint (dimensions do not fit - does not affect it's function)
-- [ ] Better solultion for mounting THT components (spacers vs. SMD header)
-- [ ] Integrate into case
-
+# Sensorstick - a compact PCB designed to integrate a CO2 sensor into a USB stick form factor
 
 ## Build of Materials (BOM)
 
