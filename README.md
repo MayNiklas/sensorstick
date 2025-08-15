@@ -1,5 +1,7 @@
 # Sensorstick - a compact PCB designed to integrate a CO2 sensor into a USB stick form factor
 
+![3D render of the PCB](img/pcb.png)
+
 ## Build of Materials (BOM)
 
 Interactive BOM: https://mayniklas.github.io/sensorstick/

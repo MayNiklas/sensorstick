@@ -10,7 +10,7 @@
 	(title_block
 		(title "Sensorstick")
 		(date "2025-03-16")
-		(rev "1")
+		(rev "2")
 		(company "MayNiklas")
 		(comment 1 "https://github.com/MayNiklas/sensorstick")
 	)
