@@ -32,3 +32,57 @@ outputs:
       no_compression: true
       include_nets: true
       include_tracks: true
+
+  - name: basic_diff_pcb
+    comment: PCB diff between the last two changes
+    type: diff
+    dir: diff
+    layers:
+      - layer: F.Cu
+        suffix: F_Cu
+        description: Front copper
+      - layer: F.Mask
+        suffix: F_Mask
+        description: Front soldermask (negative)
+      - layer: B.Cu
+        suffix: B_Cu
+        description: Bottom copper
+      - layer: B.Mask
+        suffix: B_Mask
+        description: Bottom soldermask (negative)
+      - layer: F.Silkscreen
+        suffix: F_Silkscreen
+        description: Front silkscreen (artwork)
+      - layer: F.Paste
+        suffix: F_Paste
+        description: Front solder paste
+      - layer: User.Comments
+        suffix: User_Comments
+        description: User comments
+      - layer: Edge.Cuts
+        suffix: Edge_Cuts
+        description: Board shape
+      - layer: F.Courtyard
+        suffix: F_Courtyard
+        description: Front courtyard area
+      - layer: F.Fab
+        suffix: F_Fab
+        description: Front documentation
+    options:
+      old: KIBOT_LAST-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      add_link_id: true
+
+  - name: basic_diff_sch
+    comment: Schematic diff between the last two changes
+    type: diff
+    dir: diff
+    options:
+      old: KIBOT_LAST-1
+      old_type: git
+      new: HEAD
+      new_type: git
+      add_link_id: true
+      pcb: false
