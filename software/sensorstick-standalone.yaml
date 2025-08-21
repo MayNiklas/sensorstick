@@ -49,9 +49,9 @@ sensor:
     update_interval: 10s
 
 font:
-  - file: "https://gitlab.freedesktop.org/xorg/font/misc-misc/-/raw/master/6x10.bdf"
+  - file: "https://gitlab.freedesktop.org/xorg/font/misc-misc/-/raw/master/7x14.bdf"
     id: font_label
-    size: 10
+    size: 13
 
 display:
   - platform: ssd1306_i2c
