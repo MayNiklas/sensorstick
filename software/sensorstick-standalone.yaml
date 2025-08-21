@@ -1,0 +1,76 @@
+esphome:
+  name: sensorstick
+  friendly_name: sensorstick
+
+esp32:
+  board: esp32-c3-devkitm-1
+  variant: ESP32C3
+  framework:
+    type: esp-idf
+
+logger:
+  level: WARN
+
+debug:
+  update_interval: 5s
+
+i2c:
+  sda: 1
+  scl: 0
+
+sensor:
+  - platform: uptime
+    name: "Uptime"
+    id: uptime_sensor
+    update_interval: 60s
+
+  - platform: debug
+    free:
+      name: "Heap Free"
+      id: heap_free
+      disabled_by_default: True
+
+    loop_time:
+      name: "Loop Time"
+      id: loop_time
+      disabled_by_default: True
+
+  - platform: scd4x
+    co2:
+      name: "SCD40 CO2"
+      id: co2_scd40
+    temperature:
+      name: "SCD40 Temperature"
+      id: temp_scd40
+    humidity:
+      name: "SCD40 Humidity"
+      id: hum_scd40
+    measurement_mode: periodic
+    update_interval: 10s
+
+font:
+  - file: "https://gitlab.freedesktop.org/xorg/font/misc-misc/-/raw/master/6x10.bdf"
+    id: font_label
+    size: 10
+
+display:
+  - platform: ssd1306_i2c
+    model: "SSD1306 128x32"
+    # rotation: 180
+    update_interval: 1s
+    lambda: !lambda |-
+      it.printf(0, 16, id(font_label), "CO2: %.0f ppm", id(co2_scd40).state);
+
+output:
+  - platform: ledc
+    pin:
+      number: GPIO8
+      ignore_strapping_warning: true
+    id: led1
+    inverted: true
+
+light:
+  - platform: monochromatic
+    output: led1
+    name: On-Board LED
+    default_transition_length: 0.2s
