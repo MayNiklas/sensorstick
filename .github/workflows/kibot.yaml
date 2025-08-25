@@ -43,7 +43,7 @@ jobs:
           path: output
 
       - name: Upload artifact (GitHub pages)
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: output/Assembly
 
