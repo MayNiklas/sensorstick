@@ -52,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C5248081"
+			(property "LCSC" "C5248081"
 				(at 0 -13.97 0)
 				(effects
 					(font
@@ -336,7 +336,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part" "C319178"
+			(property "LCSC" "C319178"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2233,6 +2233,12 @@
 		(uuid "ba5fcde6-206e-401f-9953-493857786a9c")
 	)
 	(junction
+		(at 87.63 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4c99961-afa6-4580-a63e-16a2929732bb")
+	)
+	(junction
 		(at 134.62 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2275,10 +2281,6 @@
 	(no_connect
 		(at 41.91 54.61)
 		(uuid "793b43dd-0c21-49a4-89d0-8a041e2538c2")
-	)
-	(no_connect
-		(at 62.23 31.75)
-		(uuid "98f78d26-27e4-4c8b-9851-d1d86cf1c403")
 	)
 	(no_connect
 		(at 41.91 66.04)
@@ -2648,6 +2650,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 30.48) (xy 88.9 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a721b305-68f3-4db6-a2eb-90a4d997a869")
+	)
+	(wire
+		(pts
 			(xy 39.37 62.23) (xy 41.91 62.23)
 		)
 		(stroke
@@ -2685,6 +2697,16 @@
 			(type default)
 		)
 		(uuid "cf04eb57-e954-41a5-bfbd-9f19c95d945e")
+	)
+	(wire
+		(pts
+			(xy 88.9 46.99) (xy 87.63 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d15f721c-57d9-4663-a177-919366441359")
 	)
 	(wire
 		(pts
@@ -2748,6 +2770,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 31.75) (xy 62.23 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e58c54f3-7353-472a-a710-0dc469eca265")
+	)
+	(wire
+		(pts
 			(xy 91.44 43.18) (xy 91.44 40.64)
 		)
 		(stroke
@@ -2755,6 +2787,16 @@
 			(type default)
 		)
 		(uuid "f028ec17-4d47-4e9f-ae1e-1a10f39790f3")
+	)
+	(wire
+		(pts
+			(xy 62.23 30.48) (xy 88.9 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcc93ce7-7b3d-4550-b5c3-4f8712db0b8e")
 	)
 	(wire
 		(pts
@@ -3170,15 +3212,6 @@
 			)
 		)
 		(property "Description" "USB Type A connector"
-			(at 54.61 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C319178"
 			(at 54.61 105.41 0)
 			(effects
 				(font
@@ -4771,15 +4804,6 @@
 		)
 		(property "Description" ""
 			(at 121.92 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C5248081"
-			(at 121.92 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)

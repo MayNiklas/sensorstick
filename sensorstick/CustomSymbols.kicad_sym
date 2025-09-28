@@ -536,7 +536,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C5248081"
+		(property "LCSC" "C5248081"
 			(at 0 -13.97 0)
 			(effects
 				(font
@@ -815,7 +815,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C319178"
+		(property "LCSC" "C319178"
 			(at 0 -17.78 0)
 			(effects
 				(font
@@ -999,7 +999,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C319178"
+		(property "LCSC" "C319178"
 			(at 0 0 0)
 			(effects
 				(font
