@@ -438,7 +438,7 @@
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/CustomLibrary.pretty/3d-models/Seeed Studio XIAO ESP32-C6.step"
 		(offset
-			(xyz 6 -1.5 0)
+			(xyz 5.88 -1.6 0)
 		)
 		(scale
 			(xyz 1 1 1)
