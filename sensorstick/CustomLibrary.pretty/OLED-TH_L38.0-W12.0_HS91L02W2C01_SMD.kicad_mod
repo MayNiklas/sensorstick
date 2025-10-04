@@ -490,4 +490,48 @@
 			(xyz -0 -0 -0)
 		)
 	)
+	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+		(offset
+			(xyz 5 3.5 2)
+		)
+		(scale
+			(xyz 0.393 0.393 0.393)
+		)
+		(rotate
+			(xyz -0 -180 -0)
+		)
+	)
+	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+		(offset
+			(xyz 5 -4 2)
+		)
+		(scale
+			(xyz 0.393 0.393 0.393)
+		)
+		(rotate
+			(xyz -0 -180 -0)
+		)
+	)
+	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+		(offset
+			(xyz 34.5 3.5 2)
+		)
+		(scale
+			(xyz 0.393 0.393 0.393)
+		)
+		(rotate
+			(xyz -0 -180 -0)
+		)
+	)
+	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+		(offset
+			(xyz 34.5 -4 2)
+		)
+		(scale
+			(xyz 0.393 0.393 0.393)
+		)
+		(rotate
+			(xyz -0 -180 -0)
+		)
+	)
 )
