@@ -490,7 +490,7 @@
 			(xyz -0 -0 -0)
 		)
 	)
-	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+	(model "${KIPRJMOD}/CustomLibrary.pretty/3d-models/standoff.wrl"
 		(offset
 			(xyz 5 3.5 2)
 		)
@@ -501,7 +501,7 @@
 			(xyz -0 -180 -0)
 		)
 	)
-	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+	(model "${KIPRJMOD}/CustomLibrary.pretty/3d-models/standoff.wrl"
 		(offset
 			(xyz 5 -4 2)
 		)
@@ -512,7 +512,7 @@
 			(xyz -0 -180 -0)
 		)
 	)
-	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+	(model "${KIPRJMOD}/CustomLibrary.pretty/3d-models/standoff.wrl"
 		(offset
 			(xyz 34.5 3.5 2)
 		)
@@ -523,7 +523,7 @@
 			(xyz -0 -180 -0)
 		)
 	)
-	(model "${KIPRJMOD}/CustomLibrary.pretty/standoff.wrl"
+	(model "${KIPRJMOD}/CustomLibrary.pretty/3d-models/standoff.wrl"
 		(offset
 			(xyz 34.5 -4 2)
 		)
