@@ -846,6 +846,18 @@
 				)
 			)
 		)
+		(property "LCSC" "C3037696"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6c8f04e7-0892-4262-a6e4-77296abb6872")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Sensirion*SCD4?*")
 		(path "/828debc1-d7b8-4ba3-a8ba-e9fab9fccb92")
 		(sheetname "/")
