@@ -3249,7 +3249,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CustomLibrary:XIAO-ESP32C6-SMD"
+		(property "Footprint" "CustomLibrary:XIAO-ESP32C6-SMD_no-pad"
 			(at 54.61 49.53 0)
 			(effects
 				(font
