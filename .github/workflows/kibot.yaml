@@ -37,7 +37,7 @@ jobs:
           board: "sensorstick/sensorstick.kicad_pcb"
       - name: upload results
         if: ${{ always() }}
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: output
           path: output
