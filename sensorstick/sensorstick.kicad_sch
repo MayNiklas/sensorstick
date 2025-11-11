@@ -1262,6 +1262,261 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "LED:WS2812B"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "WS2812B"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WS2812B_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "WS2812B_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WS2812B_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -1854,7 +2109,7 @@
 	)
 	(rectangle
 		(start 110.49 29.21)
-		(end 179.07 77.47)
+		(end 157.48 77.47)
 		(stroke
 			(width 0)
 			(type default)
@@ -1877,6 +2132,18 @@
 		(uuid 63322b69-1944-4c21-8abc-e5aae41881a3)
 	)
 	(rectangle
+		(start 165.1 29.21)
+		(end 215.9 77.47)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 745de5a9-8555-48a9-8638-25173842a886)
+	)
+	(rectangle
 		(start 29.845 29.21)
 		(end 101.6 77.47)
 		(stroke
@@ -1890,7 +2157,7 @@
 	)
 	(rectangle
 		(start 110.49 88.9)
-		(end 179.07 127)
+		(end 157.48 127)
 		(stroke
 			(width 0)
 			(type default)
@@ -1919,6 +2186,16 @@
 			)
 		)
 		(uuid "438ecc16-ff05-46a3-9c6e-51f14d519bc8")
+	)
+	(text "WS2812B LED (60mA)"
+		(exclude_from_sim no)
+		(at 175.26 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4b3a36d0-716d-48b2-aeeb-2852c90f3487")
 	)
 	(text "ESP32-C3 Super Mini"
 		(exclude_from_sim no)
@@ -1971,6 +2248,12 @@
 		(uuid "2bb3cc2d-9165-4413-9821-fb1957482d27")
 	)
 	(junction
+		(at 198.12 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9187143e-fa12-49b9-8082-9b9de95e8b52")
+	)
+	(junction
 		(at 133.35 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1981,6 +2264,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba5fcde6-206e-401f-9953-493857786a9c")
+	)
+	(junction
+		(at 198.12 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9dd4f33-9e86-45eb-ba2f-4ae0e2152ea0")
 	)
 	(junction
 		(at 134.62 104.14)
@@ -2031,8 +2320,8 @@
 		(uuid "886bf276-32ef-4bee-bcc9-8d37bc7e7996")
 	)
 	(no_connect
-		(at 45.72 55.88)
-		(uuid "c2a6fdcf-a2d9-4e20-9d72-e36aedc0838f")
+		(at 205.74 49.53)
+		(uuid "b85d3b0f-c7f0-4db5-b096-6d8bdaed809b")
 	)
 	(no_connect
 		(at 45.72 60.96)
@@ -2045,16 +2334,6 @@
 	(no_connect
 		(at 81.28 48.26)
 		(uuid "dee8f1ad-4064-4653-9c8c-23db65f49543")
-	)
-	(wire
-		(pts
-			(xy 127 102.87) (xy 127 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e4208b4-30ff-46dc-8d2f-3922bf0a6e5f")
 	)
 	(wire
 		(pts
@@ -2078,6 +2357,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 54.61) (xy 170.18 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2333660d-0fd7-4fea-a3ed-b6e924e0ab69")
+	)
+	(wire
+		(pts
 			(xy 48.26 116.84) (xy 52.07 116.84)
 		)
 		(stroke
@@ -2088,6 +2377,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 101.6) (xy 127 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dff318b-a83b-43bc-ac7f-c09cd9c88269")
+	)
+	(wire
+		(pts
 			(xy 86.36 58.42) (xy 86.36 68.58)
 		)
 		(stroke
@@ -2095,16 +2394,6 @@
 			(type default)
 		)
 		(uuid "38c2dd91-a135-4a05-8295-ceeb012c4999")
-	)
-	(wire
-		(pts
-			(xy 128.27 102.87) (xy 127 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c539e64-79a8-46f4-bfd2-ad24cda209f0")
 	)
 	(wire
 		(pts
@@ -2158,6 +2447,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 46.99) (xy 170.18 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e957777-8641-4786-a855-e4020b751d78")
+	)
+	(wire
+		(pts
 			(xy 127 104.14) (xy 134.62 104.14)
 		)
 		(stroke
@@ -2168,7 +2467,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 45.72) (xy 156.21 45.72)
+			(xy 143.51 45.72) (xy 146.05 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2185,6 +2484,26 @@
 			(type default)
 		)
 		(uuid "53df6425-1f0c-4f66-9deb-c5bfe22bb894")
+	)
+	(wire
+		(pts
+			(xy 198.12 40.64) (xy 198.12 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54f8b79c-9725-4913-8e0f-a337dca97c16")
+	)
+	(wire
+		(pts
+			(xy 170.18 58.42) (xy 198.12 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c6f222d-acf4-47d1-b9f2-5d2a835bf397")
 	)
 	(wire
 		(pts
@@ -2248,6 +2567,26 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 99.06) (xy 127 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "868000d7-0ddc-4cb0-9ce6-56c369b69eeb")
+	)
+	(wire
+		(pts
+			(xy 198.12 39.37) (xy 198.12 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "869407dc-aeb3-4b3a-9e5a-9fb8cbbf9feb")
+	)
+	(wire
+		(pts
 			(xy 44.45 48.26) (xy 45.72 48.26)
 		)
 		(stroke
@@ -2288,6 +2627,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 57.15) (xy 198.12 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "955db339-d35f-4ad4-8409-f33851becc61")
+	)
+	(wire
+		(pts
 			(xy 133.35 58.42) (xy 133.35 59.69)
 		)
 		(stroke
@@ -2308,6 +2657,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 55.88) (xy 45.72 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb4b2bf-3aeb-4ea2-8f67-68fc7f9744f8")
+	)
+	(wire
+		(pts
 			(xy 127 106.68) (xy 128.27 106.68)
 		)
 		(stroke
@@ -2315,6 +2674,16 @@
 			(type default)
 		)
 		(uuid "a643a587-ded1-4e76-9fca-a7de82179e60")
+	)
+	(wire
+		(pts
+			(xy 170.18 40.64) (xy 198.12 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b56befe0-40f8-4c14-a105-e3fcce600b02")
 	)
 	(wire
 		(pts
@@ -2328,7 +2697,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 49.53) (xy 143.51 49.53)
+			(xy 146.05 49.53) (xy 143.51 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2345,6 +2714,16 @@
 			(type default)
 		)
 		(uuid "c5202581-de8d-47c5-9104-b23552d4a7fb")
+	)
+	(wire
+		(pts
+			(xy 187.96 49.53) (xy 190.5 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbb592e7-bb02-4a84-af98-b5c24c8d65ff")
 	)
 	(wire
 		(pts
@@ -2408,6 +2787,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 58.42) (xy 198.12 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faef7ee6-e97a-4a5d-a009-233492e957ed")
+	)
+	(wire
+		(pts
 			(xy 81.28 40.64) (xy 86.36 40.64)
 		)
 		(stroke
@@ -2416,8 +2805,8 @@
 		)
 		(uuid "ff33b4cd-0727-4682-a6d3-4c8c2deaff20")
 	)
-	(label "IC2_SDA"
-		(at 127 99.06 0)
+	(label "I2C_SDA"
+		(at 129.54 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2427,7 +2816,7 @@
 		(uuid "6f751f3b-7b6e-4153-a606-680f56283cc6")
 	)
 	(label "I2C_SCL"
-		(at 128.27 102.87 0)
+		(at 129.54 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2437,7 +2826,7 @@
 		(uuid "a647bf12-ce84-493a-9a70-fb16b2027c0a")
 	)
 	(label "I2C_SCL"
-		(at 156.21 45.72 0)
+		(at 146.05 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2446,7 +2835,7 @@
 		)
 		(uuid "a9d309a8-660d-47fe-ab3a-ffb8ef1f9ae9")
 	)
-	(label "IC2_SDA"
+	(label "I2C_SDA"
 		(at 44.45 50.8 180)
 		(effects
 			(font
@@ -2456,8 +2845,8 @@
 		)
 		(uuid "c0b6abfb-ed3d-4d61-9787-ba5521b1435f")
 	)
-	(label "IC2_SDA"
-		(at 157.48 49.53 0)
+	(label "I2C_SDA"
+		(at 146.05 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2465,6 +2854,26 @@
 			(justify left bottom)
 		)
 		(uuid "d8606cda-414d-4762-97c3-2f34b8698497")
+	)
+	(label "LED_RGB"
+		(at 44.45 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9775db8-7fc6-4be7-a3ae-659ca7ca2d34")
+	)
+	(label "LED_RGB"
+		(at 187.96 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ded2768d-9183-4ede-a906-72201f0956ec")
 	)
 	(label "I2C_SCL"
 		(at 44.45 48.26 180)
@@ -2998,6 +3407,82 @@
 			(project "sensorstick"
 				(path "/7be59ae3-cff4-4640-882e-dfffcfbe988a"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 198.12 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57b0ee84-0a78-47ea-8aa0-0adc8e2292a9")
+		(property "Reference" "D1"
+			(at 209.55 43.1098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 209.55 45.6498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 199.39 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 200.66 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 198.12 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "e5dcc7ea-d846-46fb-9ae1-e8531776605b")
+		)
+		(pin "2"
+			(uuid "8707ad3b-d952-4781-a154-d9bfabf61e56")
+		)
+		(pin "4"
+			(uuid "9fdcff0f-3e3b-46eb-865d-5f9cb6cc2c4c")
+		)
+		(pin "1"
+			(uuid "92acd7d2-99c9-4e2e-a365-fadc0ba0d8f7")
+		)
+		(instances
+			(project ""
+				(path "/7be59ae3-cff4-4640-882e-dfffcfbe988a"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3568,6 +4053,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 198.12 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6587c99-6050-40cb-8941-0cea327ca3b5")
+		(property "Reference" "#PWR06"
+			(at 198.12 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 198.12 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 198.12 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21c73169-2cee-4ef8-bab2-fdb48c6252d6")
+		)
+		(instances
+			(project "sensorstick"
+				(path "/7be59ae3-cff4-4640-882e-dfffcfbe988a"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 134.62 113.03 0)
 		(unit 1)
@@ -3977,6 +4528,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 170.18 50.8 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3dc7754-6f3a-441b-adf0-b123ba84984a")
+		(property "Reference" "C5"
+			(at 173.99 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF"
+			(at 173.99 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 169.2148 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 170.18 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1591"
+			(at 173.99 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "53d3f542-53c5-45d1-bf89-8392d52088ba")
+		)
+		(pin "2"
+			(uuid "854e21fd-58e7-455a-9afc-ab22df13c16f")
+		)
+		(instances
+			(project "sensorstick"
+				(path "/7be59ae3-cff4-4640-882e-dfffcfbe988a"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CustomSymbols:SCD40_CO2_module")
 		(at 135.89 43.18 0)
 		(unit 1)
@@ -4178,6 +4808,72 @@
 			(project "sensorstick"
 				(path "/7be59ae3-cff4-4640-882e-dfffcfbe988a"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 198.12 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ed07a712-cbef-4734-92ef-1116b36d6301")
+		(property "Reference" "#PWR010"
+			(at 198.12 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 198.1201 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 198.12 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ccc6cf1-74c0-4496-ac29-1f6ce984fdcf")
+		)
+		(instances
+			(project "sensorstick"
+				(path "/7be59ae3-cff4-4640-882e-dfffcfbe988a"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
